@@ -1,14 +1,102 @@
 @charset "UTF-8";
 
+
+/* base */
 html {
   font-size: 62.5%;
 }
 
 body {
+  margin: 0;
+  background-color: #151515;
+  color: #fff;
+  text-align: center;
   font-size: 1.2rem;
   font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: rgba(71, 180, 217, 0.8);
+}
+
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+/* header */
+.header {
+  padding: 10px 60px;
+  margin-bottom: 60px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-item a {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+
+/* main */
+.main {
+  margin: 0 auto;
+  width: 970px;
+  height: 500px;
+  background: url("../img/bg.jpg");
+  background-size: cover;
+}
+
+
+/* footer */
+.footer {
+  padding: 10px 60px;
+  margin-top: 60px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.foot-item {
+  display: inline-block;
+}
+
+.foot-item a {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.foot-item .contact-icon {
+  font-size: 3rem;
 }
