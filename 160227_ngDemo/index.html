@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>ngTeratail</title>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script> -->
+  <script src="angular.min.js"></script>
+  <style>
+  input.ng-invalid {
+    border: solid 1px red;
+  }
+  .done {
+    text-decoration: line-through;
+  }
+  </style>
+</head>
+<!-- <body ng-controller="appCtrl as app"> -->
+<body>
+
+  <todo></todo>
+
+</body>
+<script>
+  (function(){
+  angular.module('myApp', [])
+    // .controller('appCtrl', [function(){
+    //   this.list = [];
+    //   this.clickButton = function(){
+    //     this.todo.date = Date.now();
+    //     this.list.push(this.todo)
+    //     this.todo = {};
+    //   };
+    //
+    //   this.clickList = function(item){
+    //     item.done = !item.done;
+    //   }
+    // }])
+    .component('todo', {
+      controllerAs: 'app',
+      controller: function(){
+        this.list = [];
+        this.clickButton = function(){
+          this.todo.date = Date.now();
+          this.list.push(this.todo)
+          this.todo = {};
+        }
+        this.clickList = function(item){
+          item.done = !item.done;
+        }
+        this.clickDeleteButton = function(item){
+          var idx = this.list.indexOf(item);
+          if(idx >=0){
+            this.list.splice(idx, 1);
+          }
+        }
+      },
+      template: `
+      <form name="todoForm" novalidate>
+        <input type="text" name="todo" ng-model="app.todo.name" required>
+        <!-- <input type="text" name="todoName" ng-model="todo" required> -->
+        <!-- ng-ifで表示を消す -->
+        <p ng-if="false">{{todo * 1.08 | currency : '¥' : 0}}</p>
+
+        <!-- <p ng-show="todoForm.todoName.$invalid">必須です！</p> -->
+        <!-- <button ng-disabled="todoForm.$invalid">Click</button> -->
+        <!-- <button ng-click="app.clickButton()">click!!</button> -->
+        <button ng-click="app.clickButton()"
+                ng-disabled="todoForm.todo.$invalid">click!!</button>
+
+        <input type="text" ng-model="app.search">
+      </form>
+
+      <ul>
+        <!-- orderByで日付で降順にしていく -->
+        <li ng-repeat="item in app.list | filter : app.search | orderBy: '-date'">
+          <span ng-click="app.clickList(item)" ng-class="{done: item.done}">{{item.name}} - {{item.date | date: 'yyyy/MM/dd HH:mm:ss'}}</span>
+          <button ng-click="app.clickDeleteButton(item)" ng-show="item.done">X</button>
+        </li>
+      </ul>
+      `
+    })
+  })();
+</script>
+</html>
