@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>関西弁AngularJS</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  <script src="script.js"></script>
+  <style>
+    input:focus {
+      background-color: rgb(250, 255, 213);
+      outline: none;
+    }
+    .kansai {
+      border: 1px solid rgb(218, 27, 113);
+    }
+  </style>
+</head>
+<body ng-controller="myCtrl as app">
+  <form name="kansaiForm" novalidate>
+    <input ng-class="{'kansai': kansaiForm.kansai.$invalid}" type="text" name="kansai" ng-model="kansai.name" required ng-minlength="5" ng-maxlength="20">
+    <p ng-show="kansaiForm.kansai.$error.required">え、なんで入力してないん？</p>
+    <p ng-show="kansaiForm.kansai.$error.minlength">そんな短くていいと思ってるん？</p>
+    <p ng-show="kansaiForm.kansai.$error.maxlength">長すぎるわ、自分</p>
+    <p ng-show="kansaiForm.kansai.$valid">さっさと送らんの？</p>
+
+    <button ng-class="{'kansaiBtn': kansaiForm.kansai.$valid}" ng-click="app.clickButton()" ng-disabled="kansaiForm.kansai.$invalid">送信</button>
+  </form>
+</body>
+</html>
