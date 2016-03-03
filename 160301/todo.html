@@ -1,0 +1,12 @@
+<form name="todoForm" novalidate>
+  <input type="text" name="todo" ng-model="app.todo.name" required>
+  <button ng-click="app.clickButton()" ng-disabled="todoForm.$invalid">Click!</button>
+  <input type="text" ng-model="app.search">
+</form>
+
+<ul>
+  <li ng-repeat="item in app.list | filter: app.search | orderBy: '-date'">
+    <span ng-click="app.clickList(item)" ng-class="{done: item.done}">{{item.name}} - {{item.date | date: 'yyyy/MM/dd HH:mm:ss'}}</span>
+    <button ng-click="app.clickDeleteButton(item)" ng-show="item.done">削除</button>
+  </li>
+</ul>

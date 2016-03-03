@@ -23,7 +23,7 @@
     <p ng-show="kansaiForm.kansai.$error.maxlength">長すぎるわ、自分</p>
     <p ng-show="kansaiForm.kansai.$valid">さっさと送らんの？</p>
 
-    <button ng-class="{'kansaiBtn': kansaiForm.kansai.$valid}" ng-click="app.clickButton()" ng-disabled="kansaiForm.kansai.$invalid">送信</button>
+    <button ng-click="app.clickButton()" ng-disabled="kansaiForm.kansai.$invalid">送信</button>
   </form>
 </body>
 </html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ja" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>noScope</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+</head>
+<body>
+  <div ng-controller="MainController as main">
+    <p>Hello, {{main.user}}!</p>
+  </div>
+</body>
+<script>
+  (function() {
+    'use strict';
+
+    class MainController {
+      constructor() {
+        this.user = 'John';
+      }
+    }
+
+    angular.module('myApp', []);
+    angular.module('myApp').controller('MainController', MainController);
+
+
+  })();
+</script>
+</html>
