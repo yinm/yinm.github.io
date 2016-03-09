@@ -1,0 +1,18 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Day2</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body ng-controller="myCtrl">
+  <div ng-class="{'color5': count === 5,
+                'color4': count === 4,
+                'color3': count === 3,
+                'color2': count === 2,
+                'color1': count === 1,
+                'color': count === 'Hello World!'}" class="count">{{count}}</div>
+</body>
+</html>

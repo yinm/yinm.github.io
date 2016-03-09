@@ -1,0 +1,30 @@
+body {
+  background-color: #000;
+}
+.count {
+  font-size: 5rem;
+}
+
+.color5 {
+  color: rgb(143, 227, 113);
+}
+.color4 {
+  color: rgb(27, 214, 209);
+  margin-top: 150px;
+}
+.color3 {
+  color: rgb(160, 0, 187);
+  margin-top: 300px;
+}
+.color2 {
+  color: rgb(242, 36, 234);
+  margin-top: 450px;
+}
+.color1 {
+  color: rgb(247, 6, 6);
+  margin-top: 600px;
+}
+.color {
+  color: rgb(255, 252, 0);
+  margin-top: 750px;
+}
