@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ja" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>#3 Please type</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body ng-controller="myCtrl as app" ng-keypress="app.onpress($event)">
+  <h1>Please type...</h1>
+  <p class="question">{{app.word}}</p>
+  <p class="answer">{{app.answer | date: 'EEEE'}}</p>
+</body>
+</html>
