@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ja" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>#4 hidden word</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-controller="myCtrl as app">
+  <button class="btn" ng-click="app.onclick()">Push me!</button>
+
+  <p>abcdefg<span ng-class="{'hideWord': app.open}">h</span>ijklmnopqrstuvwxyz</p>
+  <p><span ng-class="{'hideWord': app.open}">a</span>bcdefghijklmnopqrstuvwxyz</p>
+  <p>abcdefghijklmno<span ng-class="{'hideWord': app.open}">p</span>qrstuvwxyz</p>
+  <p>abcdefghijklmno<span ng-class="{'hideWord': app.open}">p</span>qrstuvwxyz</p>
+  <p>abcdefghijklmnopqrstuvwx<span ng-class="{'hideWord': app.open}">y</span>z</p>
+</body>
+</html>
