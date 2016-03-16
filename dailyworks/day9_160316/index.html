@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>#9 study directive scope</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-controller="Ctrl">
+
+  <div class="wrap">
+    <p class="title">scope true or false</p>
+    <div my-scope-true></div>
+    <div my-scope-false></div>
+  </div>
+
+  <div class="wrap">
+    <p class="title">= | data bind</p>
+    <div my-scope-equal prop="propA"></div>
+    <div my-scope-equal prop="propB"></div>
+  </div>
+
+  <div class="wrap">
+    <p class="title">& | function</p>
+    <div my-scope-amp ng-click="openAlert()"></div>
+  </div>
+
+  <div class="wrap">
+    <p class="title">@ | interpolate</p>
+    <div my-scope-atmark attribute="あいうえお"></div>
+    <div my-scope-atmark attribute="かきくけこ"></div>
+    <div my-scope-atmark attribute="さしすせそ"></div>
+  </div>
+
+  <p>参考：<a href="http://tsudoi.org/weblog/?p=2218">directiveメソッド、scope属性について（基本）</a></p>
+
+</body>
+</html>
