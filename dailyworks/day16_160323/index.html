@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ja" ng-app="MyAngularJS">
+<head>
+  <meta charset="utf-8">
+  <title>#16 AngularJS + TypeScript</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+  <div ng-controller="SampleCtrl as app">
+    <strong>First name:</strong>{{app.firstName}}<br>
+    <strong>Last name:</strong>{{app.lastName}}<br>
+    <strong>Full name:</strong>{{app.getFullName()}}<br>
+  </div>
+
+  <p>参考：<a href="https://speakerdeck.com/armorik83/typescriptdeshu-kuangularjs-at-gdgshen-hu-2014-dot-8-23">
+TypeScriptで書くAngularJS @ GDG神戸2014.8.23</a></p>
+</body>
+</html>
