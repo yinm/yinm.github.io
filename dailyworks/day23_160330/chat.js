@@ -33,4 +33,6 @@ angular.module("chatApp", [])
       $scope.readMes();
     })
 
+    $scope.readMes();
+
   });
