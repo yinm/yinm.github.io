@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>#24 typing message</title>
+</head>
+<body>
+  <p>参考：
+      <a href="http://www.red.oit-net.jp/tatsuya/java/Fleft4.htm">イヌでもわかるJavaScript講座</a>
+  </p>
+
+  <div id="typing">
+  </div>
+
+
+  <script>
+    var myMsg = "いらっしゃいませ@こんにちは！@それでは@さようなら！";
+    var myCR = "@";
+    var myCnt = 0;
+    var myMess;
+
+    function myFunc(){
+        if (myCnt === 0){
+            myMess = "";
+        }else{
+            myChar = myMsg.substring( myCnt-1 , myCnt );
+            if (myChar === myCR){
+                myMess = myMess + "<BR>";
+            }else{
+                myMess = myMess + myChar;
+            }
+        }
+        myStr = myMess + "_"; // カーソルっぽいのを付ける
+        myCnt = ( myCnt === myMsg.length ) ? 0 : myCnt+1;
+        document.getElementById( "typing" ).innerHTML = myStr;
+    }
+
+  setInterval( "myFunc()", 200 );
+  </script>
+
+</body>
+</html>
