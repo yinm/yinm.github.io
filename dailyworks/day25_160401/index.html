@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>#25 typing messeage 2</title>
+</head>
+<body>
+  <p>好きな文字を入力して、START!ボタンを押すと、タイピングアニメーションが始まります:)</p>
+  <input id="input" type="text">
+  <input id="submit" type="submit" value="START！">
+
+  <div id="typing"></div>
+
+  <script>
+    var input = document.getElementById('input');
+    var submit = document.getElementById('submit');
+    var myMsg;
+    var myCnt = 0;
+    var myMess;
+
+    submit.addEventListener("click", function() {
+      myMsg = input.value;
+      setInterval( "myFunc()", 200 );
+
+    });
+
+    function myFunc() {
+      myMess = myMsg.substring(0, myCnt) + "_";
+      myCnt = (myCnt === myMsg.length) ? 0 : myCnt + 1;
+      document.getElementById("typing").innerHTML = myMess;
+    }
+
+  </script>
+</body>
+</html>
