@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+
+/* base */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  background-color: #151515;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+/* header */
+.header {
+  padding: 10px 60px;
+  margin-bottom: 60px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-item a {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+
+/* main */
+.main {
+  margin: 0 auto;
+  width: 970px;
+  height: 500px;
+  background: url("../img/bg.jpg");
+  background-size: cover;
+}
+
+
+/* footer */
+.footer {
+  padding: 10px 60px;
+  margin-top: 60px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.foot-item {
+  display: inline-block;
+}
+
+.foot-item a {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.foot-item .contact-icon {
+  font-size: 3rem;
+}
+
+
+/***************************
+DailyWorks
+****************************/
+/* DW_base */
+.DW_content_title {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  margin: 20px auto 40px;
+}
+.DW_content_title::before,
+.DW_content_title::after {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 20px;
+  border: 1px solid;
+  vertical-align: 6px;
+  transform: rotate(45deg);
+}
+
+/* DW_header */
+.DW_header {
+  padding: 100px 30px 80px;
+}
+.DW_title {
+  letter-spacing: 2px;
+  font-size: 6rem;
+}
+.DW_subtitle {
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+}
+.DW_subtitle::before,
+.DW_subtitle::after {
+  content: '';
+  display: inline-block;
+  width: 80px;
+  height: 2px;
+  margin: 0 30px;
+  background-color: #fff;
+  vertical-align: middle;
+}
+
+/* Today's Work */
+.DW_today::before,
+.DW_today::after {
+  content: '';
+  display: block;
+  width: 90%;
+  height: 2px;
+  margin: 20px auto;
+  background-color: #fff;
+  vertical-align: middle;
+}
+.DW_button {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px 50px;
+  background-color: #00adb5;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+.DW_button:hover {
+  opacity: 0.9;
+}
+
+/* DW_works */
+.DW_works {
+  padding: 50px 0;
+}
+.DW_list_item {
+  display: inline-block;
+  width: 90%;
+  height: 3.5rem;
+  vertical-align: middle;
+  line-height: 3.5rem;
+  background-color: #393e46;
+  color: #eee;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.DW_list_item:hover {
+  border-bottom: 2px dashed #00adb5;
+}
