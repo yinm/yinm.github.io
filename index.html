@@ -1,22 +1,222 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>yinm's portfolio site</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
   <body>
     <header class="header">
+      <img src="assets/img/main_visual.png" alt="main_visual">
+
+      <nav class="global-nav">
+        <ul>
+          <li class="nav-item">
+            <a href="#"><img src="assets/img/main_logo.png" alt="main_logo">yinm</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#works">Works</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="http://corocoro.info/">Blog</a>
+          </li>
+        </ul>
+      </nav>
       <h1>yinm's portfolio site</h1>
+
+      <section class="header-content1">
+        <h2>DailyWorks</h2>
+        <p>
+          「継続は力なり」をコンセプトに、書いたコードをGitHubに毎日アップしています。その他の作品については、Worksページをご覧下さい。
+          <a href="http://yinm.github.io/dailyworks/" target="_blank">
+            <img src="assets/img/header_DailyWorks.png" alt="DailyWorks">
+          </a>
+        </p>
+      </section>
+
+      <section class="header-content2">
+        <h2>My Skills</h2>
+        <p>
+          スキルセットの紹介。まだまだ勉強中のものも多いですが、勉強会に参加するなどして、日々スキルアップに励んでます。
+          <img src="assets/img/header_skills.png" alt="MySkills">
+        </p>
+      </section>
+
     </header>
 
-    <div class="main">
-    </div>
+    <section class="about">
 
+      <h1>About</h1>
+
+      <!-- 1ページ目 -->
+      <div class="left">
+        <h2>Iinuma Yusuke</h2>
+        <p>
+          1989年生まれ。大阪出身。
+          現在は、東京のSI企業でSEをしています。
+          仕事では、変わった言語を使用しています。
+          そのため、Web関連やデザインの技術は個人で勉強しています。
+          作りたいアプリがあり、2015年12月からプログラミングを本腰入れて始めました。
+          特にフロントエンドに興味があります。
+          人が操作する部分を開発できることが魅力的です。とても面白いです。
+          使った人が気持ち良く使えるような、
+          UI/UXの作れるようになりたいです。
+          好きなことは、
+          音楽(聴くのも、演奏するのも)・漫画
+          好きな言葉は、
+          「遅刻でもいいから行こうかな」
+        </p>
+      </div>
+      <div class="right">
+        <img src="assets/img/about_main_logo.png" alt="about_main_logo">
+      </div>
+
+      <!-- 2ページ目 -->
+      <h2>TimeLine</h2>
+
+      <div class="timeline">
+        <!-- 図形 -->
+        <div class="line1"></div>
+        <div class="curve1"></div>
+        <div class="line2"></div>
+        <div class="curve2"></div>
+        <div class="line3"></div>
+
+        <!-- 印・文字 -->
+        <span class="point p1">
+          <span class="timeline-title">2013 Apr.</span>
+          <span class="timeline-info">
+            SI企業に入社
+            プログラミングを初めて行う
+          </span>
+        </span>
+
+        <span class="point p2">
+          <span class="timeline-title">2013 Nov.</span>
+          <span class="timeline-info">
+            Objective-Cを勉強
+            C言語が分からず挫折
+          </span>
+        </span>
+
+        <span class="point p3">
+          <span class="timeline-title">2014 Jun.</span>
+          <span class="timeline-info">
+            HTML/CSSを勉強
+            本通りに写経しただけでやめてしまう
+          </span>
+        </span>
+
+        <span class="point p4">
+          <span class="timeline-title">2015 Mar.</span>
+          <span class="timeline-info">
+            JavaScriptを勉強
+            DOMやオブジェクト指向が分からず挫折
+          </span>
+        </span>
+
+        <span class="point p5">
+          <span class="timeline-title">2015 Dec.</span>
+          <span class="timeline-info">
+            プログラミングスクールに通う
+            オリジナルのWebアプリを開発する
+          </span>
+        </span>
+
+        <span class="point p6">
+          <span class="timeline-title">2016 Feb.</span>
+          <span class="timeline-info">
+            勉強会に初めて参加する
+            以後、月に5回前後のペースで参加
+          </span>
+        </span>
+
+        <span class="point p7">
+          <span class="timeline-title">2016 Mar.</span>
+          <span class="timeline-info">
+            DailyWorksを始める
+            目標はGitHubの画面を緑1色にすること
+          </span>
+        </span>
+
+        <span class="point p8">
+          <span class="timeline-title">2016 Apr.</span>
+          <span class="timeline-info">
+            デザインスクールに通う
+            デザインのルールやソフトの使い方を学ぶ
+          </span>
+        </span>
+
+        <span class="point p9">
+          <span class="timeline-title">2016 May.</span>
+          <span class="timeline-info">
+            WebGLスクールに通う予定
+            3DCGを自分で描けるようになることが目標
+          </span>
+        </span>
+      </div>
+
+    </section>
+
+    <section class="work">
+      <h1>Works</h1>
+      <div class="work-box">
+        <a href="http://yinm.github.io/dailyworks/" target="_blank">
+          <img src="assets/img/works_DailyWorks.png" alt="DailyWorks">
+        </a>
+
+        <a href="http://sweeptasks.herokuapp.com/" target="_blank">
+          <img src="assets/img/works_SweepTasks.png" alt="SweepTasks">
+        </a>
+
+        <a>
+          <img src="assets/img/works_comingsoon.png" alt="commingsoon">
+        </a>
+
+        <a>
+          <img src="assets/img/works_comingsoon.png" alt="commingsoon">
+        </a>
+      </div>
+
+    </section>
+
+    <section class="contact">
+      <h1>Contact</h1>
+
+      <ul class="contact-box">
+        <li>
+          <a href="https://github.com/yinm" target="_blank">
+            <img src="assets/img/contact_github.png" alt="GitHub">
+          </a>
+        </li>
+
+        <li>
+          <a href="https://twitter.com/yinm_cminor9" target="_blank">
+            <img src="assets/img/contact_twitter.png" alt="Twitter">
+          </a>
+        </li>
+
+        <li>
+          <a href="mailto:yinm.cminor9@gmail.com">
+            <img src="assets/img/contact_mail.png" alt="mail">
+          </a>
+        </li>
+      </ul>
+
+    </section>
 
     <footer class="footer">
+      <p>
+        © yinm
+      </p>
     </footer>
   </body>
 </html>
