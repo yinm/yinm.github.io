@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+html
+,body
+{
+  margin: 0;
+  padding: 0;
+}
+#contents01 {
+  background-image: url(http://placekitten.com/g/800/900);
+}
+#contents02 {
+  background-image: url(http://placekitten.com/g/900/800);
+}
+#contents03 {
+  background-image: url(http://placekitten.com/g/900/900);
+}
+.bgImage {
+  width: 100%;
+  min-height: 800px;
+  color: #fff;
+  display: table;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.bgImage > * {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .bgImage {
+    background-attachment: fixed;
+  }
+}
