@@ -2,17 +2,25 @@
   base
 -------------------------*/
 html {
-  font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 *, *::before, *::after {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   font-size: 2rem;
   color: #4A4A4A;
-  font-family: Hiragino Sans,  Hiragino Kaku Gothic ProN,  Meiryo, sans-serif;
-}
+  font-family: Hiragino Sans,  Hiragino Kaku Gothic ProN,  Meiryo, sans-serif; }
 
-/*# sourceMappingURL=style.css.map */
+/*-------------------------
+
+-------------------------*/
+/*-------------------------
+
+-------------------------*/
+/*-------------------------
+
+-------------------------*/
+/*-------------------------
+
+-------------------------*/
