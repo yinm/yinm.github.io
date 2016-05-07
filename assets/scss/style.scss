@@ -29,34 +29,45 @@ a {
 .global-nav {
   ul {
     position: absolute;
-    z-index: 20;
+    z-index: 1;
     width: 1440px;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     background-color: #9B9B9B;
-    opacity: 0.4;
+    opacity: 0.43;
+    margin: 0 auto;
   }
   li {
+    display: table;
     float: left;
     width: 207px;
     height: 97px;
-    margin: 0;
-    padding: 0;
   }
   a{
   text-align: center;
-  display: block;
+  display: table-cell;
+  vertical-align: middle;
   padding: 0.5em 0;
   width: 100%;
   color: #fff;
     &:hover {
-    background-color: red;
+      border-bottom: 3px solid #006BBF;
+    }
+    div {
+      display: table;
+      margin: 0 auto;
+      img, span {
+        display: table-cell;
+        vertical-align: middle;
+      }
+      span {
+        padding-left: 20px;
+      }
     }
   }
 }
 
 .header {
+  border: 1px solid #4A4A4A;
   .title {
     display: none;
   }
@@ -65,9 +76,40 @@ a {
     position: relative;
     background: url('../img/main_visual.png') no-repeat left center;
     background-size: auto 100%;
+    margin-bottom: 61px;
+  }
+  .subtitle {
+    font-size: 4rem;
+    letter-spacing: 3px;
+    padding-bottom: 11px;
+    border-bottom: 3px solid #979797;
+  }
+  .header-content1
+  ,.header-content2
+  {
+    width: 1102px;
+    margin: 0 auto;
+    img {
+      float: right;
+    }
+    .header-description {
+      margin-top: 33px;
+      letter-spacing: 1.5px;
+    }
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+  .header-content2 {
+    margin-top: 34px;
+    margin-bottom: 48px;
   }
 
 }
+
+
 
 /*-------------------------
 About
@@ -131,6 +173,7 @@ About
 Works
 -------------------------*/
 .works {
+  border: 1px solid #4A4A4A;
   height: 1169px;
   background-color: #fff;
   text-align: center;
