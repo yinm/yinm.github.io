@@ -1,0 +1,23 @@
+.container {
+  display: table;
+  width: 300px;
+}
+.box {
+  display: table-cell;
+  width: 100px;
+}
+.row {
+  display: table-row;
+}
+.gray {
+  background: gray;
+}
+.green {
+  background: green;
+}
+.orange {
+  background: orange;
+}
+.blue {
+  background: blue;
+}
