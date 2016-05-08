@@ -1,0 +1,28 @@
+@charset 'utf-8';
+
+.container {
+  border: 3px solid #155cb0;
+  margin: 50px;
+}
+.border {
+  border: 1px solid #333;
+  margin: 30px;
+}
+.inline {
+  display: inline-block;
+}
+.block {
+  display: block;
+}
+li {
+  list-style-type: none;
+  border: 1px solid #ccc;
+  margin: 5px;
+}
+.after li {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+}
