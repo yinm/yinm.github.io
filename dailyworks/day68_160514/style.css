@@ -1,0 +1,79 @@
+@charset 'utf-8';
+
+/* base */
+body {
+  min-height: 2000px;
+}
+.link {
+  margin-bottom: 50px;
+}
+div {
+  position: relative;
+  border: 1px solid;
+}
+.label,
+.endlabel
+{
+  position: absolute;
+  background-color: #15a74f;
+  color: #fff;
+  line-height: 1em;
+}
+.label {
+  top: 0;
+  left: 0;
+  padding: 0 3px 3px 0;
+}
+.endlabel {
+  right: 0;
+  bottom: 0;
+  padding: 3px 0 0 3px;
+}
+.elem-red > .label,
+.elem-red > .endlabel
+{
+  background-color: #cf1256;
+}
+.elem-blue > .label,
+.elem-blue > .endlabel
+{
+  background-color: #2f67d4;
+}
+
+/* position */
+.static {
+  /*position: static;*/
+  border-color: #15a74f;
+}
+.relative1 {
+  position: relative;
+  border-color: #15a74f;
+}
+.relative2 {
+  position: relative;
+  top: -20px;
+  left: 20px;
+  width: 500px;
+  border-color: #cf1256;
+}
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 500px;
+  width: 200px;
+  border-color: #2f67d4;
+}
+.relative {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  border-color: #15a74f;
+}
+.absolute {
+  position: absolute;
+  top 120px;
+  right: 0;
+  width: 300px;
+  height: 200px;
+  border-color: #cf1256;
+}
