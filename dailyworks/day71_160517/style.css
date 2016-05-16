@@ -1,0 +1,14 @@
+@charset 'utf-8';
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+div {
+  margin: 10px;
+  padding: 100px;
+  border: 1px solid #52962a;
+}
