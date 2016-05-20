@@ -1,0 +1,36 @@
+@charset 'utf-8';
+
+body {
+  height: 3000px;
+}
+
+.nav {
+  margin: 0 auto 60px;
+  padding: 0 20px;
+  width: 760px;
+  font-size: 85%;
+  background: #555;
+}
+
+.nav li {
+  list-style: none;
+  float: left;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+  display: block;
+}
+
+.nav li a:hover {
+  background: #666;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
