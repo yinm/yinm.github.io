@@ -1,0 +1,40 @@
+@charset 'utf-8';
+
+body {
+  background-color: #2d2c2b;
+}
+
+.marker_area {
+  zoom: 1;
+  width: 200px;
+  position: absolute;
+  bottom: 200px;
+  left: 50%;
+  margin-left: -60px;
+}
+.marker_area .marker_wrap {
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 2px;
+}
+.marker_area .marker_wrap .marker {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 6px;
+  background-color: #EEEEEE;
+  border: 2px solid #313437;
+  float: left;
+  margin: 0 15px;
+}
+.marker_area .pointer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 14px;
+  background-color: #888888;
+}
