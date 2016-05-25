@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>#80 progress bar</title>
+</head>
+<body>
+  Loading: <progress id="prog" max="100" value="0">Loading...</progress> : <output id="output">0</output>%<br>
+  <input type="button" value="リロードして確認" onClick="location.reload(); return false;">
+
+  <p>参考：
+    <a href="http://honttoni.blog74.fc2.com/blog-entry-164.html">ほんっとにはじめてのHTML5とCSS3</a>
+  </p>
+
+  <script>
+    var pbar = document.getElementById('prog');
+    var ptxt = document.getElementById('output');
+    var progress = setInterval("upProgress()", 100);
+    function upProgress() {
+      <!-- progress barがmaxの値以下ならば、progress barの中身と％表示をインクリメントする -->
+      if (pbar.value <= pbar.max) {
+        pbar.value++;
+        ptxt.value = pbar.value;
+      }
+      else {
+        clearInterval(progress);
+      }
+    }
+  </script>
+</body>
+</html>
