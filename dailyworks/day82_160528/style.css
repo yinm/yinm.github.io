@@ -1,0 +1,17 @@
+@charset 'utf-8';
+
+li {
+  background-color: #0c9c27;
+  color: #fff;
+  margin: 0;
+  padding: 5px 0;
+  list-style-type: none;
+  display: flex;
+}
+p {
+  width: 100px;
+}
+li a:hover {
+  border-bottom: solid 5px #dfd600;
+  margin-bottom: -5px;
+}
