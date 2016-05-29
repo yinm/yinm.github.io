@@ -20,9 +20,6 @@ img {
 a {
   text-decoration: none; }
 
-/*-------------------------
-  header
--------------------------*/
 .global-nav ul {
   position: absolute;
   z-index: 1;
@@ -46,7 +43,8 @@ a {
   width: 100%;
   color: #fff; }
   .global-nav a:hover {
-    border-bottom: 3px solid #006BBF; }
+    margin-bottom: -5px;
+    border-bottom: 5px solid #006BBF; }
   .global-nav a div {
     display: table;
     margin: 0 auto; }

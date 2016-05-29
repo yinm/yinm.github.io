@@ -50,7 +50,8 @@ a {
   width: 100%;
   color: #fff;
     &:hover {
-      border-bottom: 3px solid #006BBF;
+      margin-bottom: -5px;
+      border-bottom: 5px solid #006BBF;
     }
     div {
       display: table;
