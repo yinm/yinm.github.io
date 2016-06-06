@@ -1,0 +1,17 @@
+@charset 'utf-8';
+
+.test_transition {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border: 1px solid #555;
+  transition-property: width, height, background;
+  transition-duration: 3s;
+  transition-timing-function: ease-out;
+}
+.test_transition:hover {
+  width: 300px;
+  height: 400px;
+  background: #555;
+  color: #fff;
+}
