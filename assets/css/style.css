@@ -20,6 +20,17 @@ img {
 a {
   text-decoration: none; }
 
+h1 {
+  font-size: 4.2rem; }
+
+h2 {
+  font-size: 3rem; }
+
+p {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  line-height: 1.7; }
+
 .global-nav ul {
   display: -webkit-box;
   display: -webkit-flex;
@@ -99,7 +110,6 @@ a {
     background-size: auto 100%;
     margin-bottom: 61px; }
   .header .subtitle {
-    font-size: 4rem;
     letter-spacing: 3px;
     padding-bottom: 11px;
     border-bottom: 3px solid #979797; }
@@ -109,7 +119,8 @@ a {
     margin: 0 auto; }
     .header .header-content1
 img, .header .header-content2 img {
-      float: right; }
+      float: right;
+      margin-top: -2px; }
     .header .header-content1
 .header-description, .header .header-content2 .header-description {
       margin-top: 33px;
@@ -136,7 +147,6 @@ About
     .about .wrapper-title .about-title {
       position: relative;
       display: inline-block;
-      font-size: 4.2rem;
       padding-bottom: 10px;
       text-align: center; }
       .about .wrapper-title .about-title::after {
@@ -153,8 +163,7 @@ About
     height: 1169px; }
   .about .left {
     float: left;
-    width: 50%;
-    font-size: 2rem; }
+    width: 50%; }
     .about .left::before, .about .left::after {
       content: '';
       display: block;
@@ -164,9 +173,9 @@ About
     width: 50%;
     text-align: center; }
   .about .about-subtitle {
-    font-size: 3.9rem;
     padding-bottom: 40px; }
   .about .timeline {
+    border-top: 3px solid #4a4a4a;
     padding: 100px 200px 0; }
 
 /*-------------------------
@@ -181,7 +190,6 @@ Works
   .works .works-title {
     position: relative;
     display: inline-block;
-    font-size: 4.2rem;
     padding-bottom: 10px; }
     .works .works-title::after {
       content: '';
@@ -196,7 +204,12 @@ Works
     table-layout: fixed;
     padding-top: 100px; }
     .works .works-wrapper .works-box {
-      display: inline-block; }
+      display: inline-block;
+      border: 1px solid #4a4a4a; }
+      .works .works-wrapper .works-box:nth-child(odd) {
+        margin-right: -8px; }
+      .works .works-wrapper .works-box:nth-child(3), .works .works-wrapper .works-box:nth-child(4) {
+        margin-top: -8px; }
 
 /*-------------------------
 Contact
@@ -210,7 +223,6 @@ Contact
   .contact .contact-title {
     position: relative;
     display: inline-block;
-    font-size: 4.2rem;
     padding-bottom: 10px; }
     .contact .contact-title::after {
       content: '';
@@ -268,4 +280,4 @@ footer
   text-align: center; }
   .footer p {
     padding: 20px;
-    font-size: 2rem; }
+    font-size: 1.4rem; }
