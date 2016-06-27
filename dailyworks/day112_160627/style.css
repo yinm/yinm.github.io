@@ -1,0 +1,43 @@
+@charset 'utf-8';
+
+body {
+  background: #000;
+  font-size: 30px;
+}
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  font-family: 'Grand Hotel', cursive;
+}
+
+/* neon */
+.neon-board {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5em;
+  box-shadow:
+    -1px -1px #fdf,
+     1px -1px #fdf,
+     1px  1px #fdf,
+    -1px  1px #fdf,
+    0 0 0.1rem #fdf,
+    0 0 0.1rem #fdf inset,
+    0 0 0.5rem #fdf,
+    0 0 0.5rem #fdf inset,
+    0 0 1rem #fdf,
+    0 0 1rem #fdf inset;
+}
+.neon-title {
+  color: #aff;
+  text-shadow:
+    0 0 0.1rem #aff,
+    0 0 0.5rem #aff,
+    0 0 1rem #aff;
+}
+.neon-sub {
+  color: #cfc;
+  text-shadow:
+    0 0 0.1rem #cfc,
+    0 0 0.5rem #cfc,
+    0 0 1rem #cfc;
+}
