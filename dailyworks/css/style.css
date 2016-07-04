@@ -26,6 +26,7 @@ a:link, a:visited, a:hover, a:active {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 .left {
@@ -188,4 +189,37 @@ DailyWorks
 }
 .DW_list_item:hover {
   border-bottom: 2px dashed #00adb5;
+}
+
+/* sp対応 */
+@media (max-width: 768px) {
+  .DW_title {
+    font-size: 4rem;
+  }
+  .DW_subtitle {
+    font-size: 1.8rem;
+  }
+  .DW_subtitle::before,
+  .DW_subtitle::after {
+    width: 40px;
+    height: 2px;
+    margin: 0 10px;
+    background-color: #fff;
+    vertical-align: middle;
+  }
+  .DW_content_title {
+    font-size: 2rem;
+  }
+  .DW_content_title::before,
+  .DW_content_title::after {
+    width: 8px;
+    height: 8px;
+    border: 1px solid;
+    vertical-align: 4px;
+    transform: rotate(45deg);
+  }
+  .DW_button,
+  .DW_list_item {
+    font-size: 1.2rem;
+  }
 }
