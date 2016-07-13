@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: linear-gradient(
+    #de28ab 0%,
+    #44c6e9 100%
+    );
+  color: #333;
+}
+.wrap {
+  margin: 50px auto;
+  padding: 30px;
+  width: 60%;
+  height: 1000px;
+  background: rgba(255, 255, 255, 0.8);
+}
