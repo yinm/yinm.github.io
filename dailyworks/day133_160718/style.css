@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+.suica {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: repeating-linear-gradient(90deg,  #47d231, #47d231 10px, #086123 0, #086123 20px);
+}
