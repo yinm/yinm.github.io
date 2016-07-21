@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+h1 {
+  font-size: 1.4rem;
+}
+button {
+  padding: 10px;
+  border: 1px solid #772d28;
+  background: #772d28;
+  color: #fff;
+}
