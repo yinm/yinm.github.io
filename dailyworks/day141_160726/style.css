@@ -1,0 +1,13 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  vertical-align: top;
+}
+#ctrl {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
