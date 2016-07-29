@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>#144 canvas path stroke</title>
+  <script>
+    function draw() {
+      var canvas = document.getElementById("tutorial");
+      if (canvas.getContext) {
+        var ctx = canvas.getContext("2d");
+
+        ctx.beginPath();
+        ctx.moveTo(75, 50);
+        ctx.lineTo(100, 75);
+        ctx.lineTo(100, 25);
+        ctx.closePath();
+        ctx.stroke();
+      }
+    }
+  </script>
+  <style>
+    canvas {
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body onload="draw();">
+  <canvas id="tutorial" width="150" height="150"></canvas>
+  <p>参考：
+    <a href="https://developer.mozilla.org/ja/docs/Web/Guide/HTML/Canvas_tutorial/Drawing_shapes">MDN</a>
+  </p>
+</body>
+</html>
