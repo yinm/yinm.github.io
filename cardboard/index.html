@@ -203,14 +203,27 @@
         );
       }
 
+
       function createDebri(limitRadius, center) {
-        var geom = new THREE.BoxGeometry(1, 1, 1);
-        var material = new THREE.MeshPhongMaterial();
-        material.color = new THREE.Color(Math.random() * 0xffffff);
-        material.emissive = new THREE.Color(0x333333);
-        material.specular = new THREE.Color(0x4444aa);
-        material.shininess = 100;
-        var mesh = new THREE.Mesh(geom, material);
+        var textureLoader = new THREE.TextureLoader();
+        var spriteMaterial = new THREE.SpriteMaterial({
+          opacity: 0.6,
+          color: 0xffffff,
+          transparent: true,
+          map: textureLoader.load("./textures/particles/sprite-sheet.png")
+        });
+        // material.emissive = new THREE.Color(0x333333);
+        // material.specular = new THREE.Color(0x4444aa);
+        // material.shininess = 100;
+        // var mesh = new THREE.Mesh(geom, material);
+        spriteMaterial.map.offset = new THREE.Vector2(0.2 * Math.floor(Math.random * 5), 0);
+        spriteMaterial.map.repeat = new THREE.Vector2(1 / 5, 1);
+        spriteMaterial.depthTest = false;
+
+        spriteMaterial.blending = THREE.AdditiveBlending;
+
+        var mesh = new THREE.Sprite(spriteMaterial);
+
         putDebriRandom(mesh, limitRadius, center);
         mesh.rotation.x = Math.random() * 2 * Math.PI;
         mesh.rotation.y = Math.random() * 2 * Math.PI;
@@ -244,7 +257,6 @@
             if (selectedDebri !== debri) {
               deselectDebri();
               selectedDebri = debri;
-              debri.material.emissive.setHex(0xff3333);
               debri.scale.set(2, 2, 2);
               break;
             }
@@ -254,7 +266,6 @@
 
       function deselectDebri() {
         if (selectedDebri) {
-          selectedDebri.material.emissive.setHex(0x333333);
           selectedDebri.scale.set(1, 1, 1);
         }
         selectedDebri = null;
