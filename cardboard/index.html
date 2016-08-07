@@ -47,7 +47,7 @@
       webGLRenderer.shadowMap.enabled = true;
 
       document.getElementById("WebGL-output").appendChild(webGLRenderer.domElement);
-      webGLRenderer.domElement.addEventListener('touchstart', function() {
+      webGLRenderer.domElement.addEventListener('click', function() {
         if (!document.mozFullScreen && !document.webkitIsFullScreen) {
           var canvas = webGLRenderer.domElement;
           var requestFullScreen = canvas.mozRequestFullScreen || canvas.webkitRequestFullScreen;
