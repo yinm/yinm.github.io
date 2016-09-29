@@ -1,0 +1,14 @@
+@charset 'utf-8';
+
+#outer {
+  width: 150px;
+  height: 150px;
+  background: #00aaff;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+#inner {
+  width: 100px;
+  height: 100px;
+  background: #eeff00;
+}
