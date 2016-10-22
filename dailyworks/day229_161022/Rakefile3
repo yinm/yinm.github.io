@@ -1,0 +1,13 @@
+task "default" => "dist"
+
+task "dist" => ["init", "compile"] do
+  puts "dist"
+end
+
+task "init" do
+  puts "init"
+end
+
+task "compile" do
+  puts "compile"
+end

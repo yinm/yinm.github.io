@@ -1,0 +1,10 @@
+task read_txt: './test_dir/read.txt'
+
+desc 'read.txtを作成する'
+file './test_dir/read.txt' do
+  puts 'write read.txt'
+
+  File.open('./test_dir/read.txt', 'w') do |f|
+    f << 'readme'
+  end
+end
