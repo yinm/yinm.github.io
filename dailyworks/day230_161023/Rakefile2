@@ -1,0 +1,14 @@
+task :default => :publish
+
+desc '善HTMLファイルを作成する'
+task :publish => 'index.html'
+
+desc 'トップページのHTMLファイルを作成する'
+file 'index.html' => ['template/index.html', 'template/header_menu.html'] do
+  base_html = File.read('template/index.html', encoding: 'utf-8')
+  menu_html = File.read('template/header_menu.html', encoding: 'utf-8')
+
+  open('index.html', 'w') do |f|
+    f.write base_html.gsub('{HEADER_MENU_HTML}', menu_html)
+  end
+end
