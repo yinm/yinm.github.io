@@ -1,6 +1,0 @@
-@charset 'utf-8';
-
-img {
-  margin-bottom: 200px;
-  -webkit-box-reflect: below 4px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(0.5, transparent), to(rgba(0, 0, 0, 0.8)));
-}

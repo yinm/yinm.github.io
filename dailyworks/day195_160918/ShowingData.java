@@ -1,3 +1,0 @@
-interface ShowingDate {
-  void showDate();
-}

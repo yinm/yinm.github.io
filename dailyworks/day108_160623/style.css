@@ -1,8 +1,0 @@
-@charset 'utf-8';
-
-input[type="text"]:disabled {
-  background: #333;
-}
-input[type="checkbox"]:checked + label {
-  background: #00ffff;
-}

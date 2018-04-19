@@ -1,2 +1,0 @@
-!function(t){function o(e){if(r[e])return r[e].exports;var n=r[e]={exports:{},id:e,loaded:!1};return t[e].call(n.exports,n,n.exports,o),n.loaded=!0,n.exports}var r={};return o.m=t,o.c=r,o.p="",o(0)}([function(t,o,r){const e=r(1);console.log(e)},function(t,o){t.exports=["cats.yml","tama","kuro","tora","test"]}]);
-//# sourceMappingURL=bundle.js.map

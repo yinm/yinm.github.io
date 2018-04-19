@@ -1,9 +1,0 @@
-@charset "utf-8";
-
-#scroll {
-  width: 200px;
-  height: 50px;
-  /* overflowがないと、スクロールできない */
-  overflow: auto;
-  border: 1px solid #333;
-}
